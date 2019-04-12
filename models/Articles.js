@@ -8,16 +8,10 @@ var ArticleSchema = new Schema ({
         required: true,
         unique : true
     },
-    author: {
-        type: String,
-        required: true,
-        unique : true
-    },
-    summary: {
+    headlineText: {
         type : String,
         required: true
     },
-    date: String,
     saved: {
         type: Boolean,
         default:false
