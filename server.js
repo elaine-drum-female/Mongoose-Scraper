@@ -1,5 +1,7 @@
 // Require Express
 var express = require("express");
+var expressHandlebars = require("express-handlebars");
+
 // Set up PORT to either designated port or 3000
 var PORT = process.env.PORT || 3000;
 // Make use of Express app
