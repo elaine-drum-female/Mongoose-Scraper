@@ -2,6 +2,12 @@
 var express = require("express");
 var expressHandlebars = require("express-handlebars");
 
+//Require Axios
+var axios = require("axios");
+
+// Require Cheerio
+var cheerio = require("cheerio");
+
 // Require Mongoose
 var mongoose = require("mongoose");
 
@@ -32,8 +38,8 @@ app.use(router);
 var db = process.env.MONGODB_URI || "mongodb://localhost/mongoArticles";
 
 // Connect Mongoose to our database
-mongoose.connect(db, function(error) {
-    if(error) {
+mongoose.connect(db, function (error) {
+    if (error) {
         console.log(error);
     }
     // Or log success
@@ -43,10 +49,7 @@ mongoose.connect(db, function(error) {
 });
 
 
-
-
 //Listen on PORT
-app.listen(PORT, function() {
+app.listen(PORT, function () {
     console.log("Listening on port:" + PORT);
 });
-
