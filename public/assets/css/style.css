@@ -38,6 +38,10 @@ h4 {
     
 }
 
+.comment-color {
+    color:#007bff;
+}
+
 .fa-user-circle:before { 
     margin-right: 5px;
 }
