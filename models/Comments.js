@@ -8,9 +8,7 @@ var CommentSchema = new Schema ({
         ref: "Articles"
     },
     date: String,
-    commentText: {
-        type: String
-    }
+    commentText: String
 });
 
 //Set up the model and export Articles
