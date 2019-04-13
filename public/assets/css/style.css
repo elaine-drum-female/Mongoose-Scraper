@@ -13,6 +13,18 @@
     font-weight:bold;
 }
 
+.header-bars {
+    background:#73a7dc;
+    text-align:center;
+    padding:20px 0;
+}
+
+.headers {
+   padding:5px;
+   color:#fff;
+   font-size:2rem;
+}
+
 .spacing {
     margin-bottom:10px;
 }
