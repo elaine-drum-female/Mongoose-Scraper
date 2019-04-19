@@ -3,14 +3,14 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var CommentSchema = new Schema ({
-    _ArticleId: {
+    _headlineId: {
         type: Schema.Types.ObjectId,
-        ref: "Articles"
+        ref: "Headline"
     },
     date: String,
     commentText: String
 });
 
 //Set up the model and export Articles
-var Comment = mongoose.model("Comments", CommentSchema);
-module.exports = Comments;
+var Comment = mongoose.model("Comment", CommentSchema);
+module.exports = Comment;
