@@ -3,14 +3,14 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 var ArticleSchema = new Schema ({
-    article: {
-        type: String,
-        required: true,
-        unique : true
-    },
     headlineText: {
         type : String,
         required: true
+    },
+    summary: {
+        type: String,
+        required: true,
+        unique : {index: {unique: true}}
     },
     link: {
         type: String,
@@ -27,5 +27,5 @@ var ArticleSchema = new Schema ({
 });
 
 //Set up the model and export Articles
-var Article = mongoose.model("Articles", ArticleSchema);
-module.exports = Articles;
+var Article = mongoose.model("Article", ArticleSchema);
+module.exports = Article;
